@@ -1,0 +1,1695 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+/* NAV AND FOOTER */
+/* Navigation Stylization */
+nav{
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.nav-link:hover{
+  background-color: #fff;
+}
+.nav-link{
+  font-weight: bold;
+}
+/* End Navigation Stylization */
+/*Footer Stylization*/
+#footer{
+  background-color: #17acc1;
+  padding: 40px 20px 30px;
+  margin-top: 20px;
+}
+#footer p, #footer h6, #footer a, .fa-instagram, 
+.fa-facebook-f, .fa-envelope, .fa-github,
+.fa-phone, .fa-linkedin, .fa-map-pin{
+  color: #fff;
+}
+.fa-instagram, .fa-facebook-f, .fa-linkedin, .fa-github{
+  font-size: 24px;
+}
+.follow{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25px, 1fr));
+} 
+#footer p, #footer a{
+  margin-bottom: 10px;
+}
+/* End Footer Stylization*/
+
+
+/* HOMEPAGE STYLIZATION */
+/* Subscribe modal Stylization */
+.modal-subscribe-format {	
+	color: #999;
+	width: 415px;
+	font-size: 15px;
+}
+.modal-subscribe-format .modal-content {
+	padding: 40px 50px;
+	border-radius: 1px;		
+    border: none;
+
+}
+.modal-subscribe-format .modal-header {
+	border-bottom: none;   
+	position: relative;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+}
+.modal-subscribe-format h4 {
+	color: #000;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	margin: 0 0 25px;		
+	text-transform: uppercase;
+}
+.modal-subscribe-format .close {
+	position: absolute;
+	top: -5px;
+  right: -15px;
+	color: #c0c3c8;
+	text-shadow: none;
+	opacity: 0.5;
+	width: 32px;
+	height: 32px;
+	border-radius: 20px;
+	font-size: 18px;
+	border: 2px solid;
+	padding: 0;
+}
+.modal-subscribe-format .close:hover {
+	opacity: 0.8;
+}
+.modal-subscribe-format .icon-box {
+	color: #49c5c1;		
+	display: inline-block;
+	z-index: 9;
+	text-align: center;
+	position: relative;
+}
+.modal-subscribe-format .icon-box i {
+  font-size: 110px;
+}
+.modal-subscribe-format .form-control, .modal-subscribe-format .btn {
+	min-height: 46px;
+	text-align: center;
+	border-radius: 1px; 
+}
+.modal-subscribe-format .form-control {
+	box-shadow: none;
+	border-color: #dbdbdb;
+}
+.modal-subscribe-format .form-control:focus {
+	border-color: #49c5c1;
+	box-shadow: 0 0 8px rgba(73, 197, 193, 0.5);
+}
+.modal-subscribe-format .btn, .subscribe-format .btn:active {
+	color: #fff;
+	background: #49c5c1 !important;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	padding: 6px 20px;
+	min-width: 180px;
+	border: none;
+	margin-top: 20px;
+	font-family: 'Airal', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.modal-subscribe-format .btn:hover, .modal-subscribe-format .btn:focus {
+	background: #39b3af !important;
+	outline: none;
+}
+.modal-subscribe-format .form-group {
+	margin-top: 30px;
+}
+/* End Subscribe Modal Stylization */
+/* Front Image Stylization */
+.centered-head{
+  z-index:9999;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(13px);
+  filter: blur(0px);
+}
+.image-container>div.text-center{
+  margin-top: -25%;
+}
+/* End front image Stylization */
+/* 3 homepage card articles Stylization */
+.centered-card, .centered-front-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:9999;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(13px);
+  filter: blur(0px);
+}
+.card-front-text{
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: normal;
+} 
+.card-container{
+  background-color: transparent;
+  border:none;
+  perspective: 1000px;
+  display: inline-block;
+  padding: 0;
+  margin:0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.card-image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  object-fit: cover;
+}
+.card-back {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-container:hover .card-image {
+  opacity: 0.3;
+}
+.card-container:hover .card-back{
+  opacity: 1;
+}
+.card-front{
+  overflow: visible;
+  width: 100%;
+  transition: .5s ease;
+}
+.card-container:hover .card-front{
+  position: absolute;
+  background-color: transparent;
+  bottom:0;
+  right:0;
+  left: 0;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.card-back-text {
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+/* End  3 homepage card articles Stylization */
+/* Carousel stylization */
+#motivinner{
+  background-size: cover;
+}
+    /*Text on image*/
+.centeredcaur, .centerescaur2{
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.centeredcaur{
+  text-shadow: 2px 2px 2px #000;
+  font-weight: normal; 
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.centerescaur2{
+  text-shadow: 3px 3px 3px #484848;
+  font-weight: 400;
+  font-size: 28px;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+.motivation-carousel-item img{
+  object-fit: cover;
+}
+    /*Carousel icons*/
+.fa-chevron-down, #motivcaurosel .fa-chevron-right, #motivcaurosel .fa-chevron-left{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  cursor: pointer;
+  opacity: 0.5; 
+  font-size: 30px;
+  opacity: 0.5;
+}
+.fa-chevron-down{
+  left:45%;
+  bottom: 0;
+}
+#motivcaurosel .fa-chevron-right, #motivcaurosel .fa-chevron-left {
+  top: 45%;
+  opacity: 0;
+}
+#motivcaurosel.fa-chevron-right:hover, #motivcaurosel .fa-chevron-left:hover, #motivcaurosel.fa-chevron-down:hover,
+#ece .fa-chevron-right:hover, #ece .fa-chevron-left:hover{
+  opacity: 1.0;
+}
+/* End Carousel stylization */
+/* Event card , calendar card stylization */
+#calcont, .calendar,#emplocard, .card-img-top{
+  width: 100%;
+  height: 320px;
+  padding: 0%;
+}
+#emplocard img{
+  object-fit: cover;
+}
+#eventinner img{
+  height: 320px;
+  object-fit: cover;
+}
+#eventinner, #eventinner img{
+  width: 100%;
+}
+#eventbtn, #emplobtn, #btnevents{
+  border-radius: 30px;
+  background-color: #17acc6;
+  font-weight: bold;
+  border: 2px solid #17acc6;
+  letter-spacing: 1.3px;
+  position: absolute;
+  bottom: 2%;
+}
+#eventbtn{
+  left: 6%;
+}
+#btnevents{
+  left: 65% ;
+}
+#emplobtn{
+  left: 33%;
+}
+#eventbtn:hover, #emplobtn:hover, #btnevents:hover{
+  background-color: #fff;
+  color: #17acc6;
+}
+.headerece{
+  color:  #17acc1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/*Calendar Course*/
+.calendar{
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+#calcont{
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:-2px ;
+}
+.course div{
+  border: #17acc1 1px solid;
+  float:left;
+  align-items: center;
+}
+.course div,.coursename button, .coursename button:hover {
+  height: 106.66666px;
+  width: 33.33333%;
+  padding: 0;
+}
+.coursename button, .coursename button:hover{
+  width: 100%;
+  height: 95px;
+  color: #17acc1;
+  background-color: #fff;
+  border-color: #fff;
+  font-size: 12px;
+  font-weight: bold; 
+  outline: none !important;
+  box-shadow: none !important;
+}
+.close-course{
+  border: 2px solid #fff;
+  color:  #fff;
+  border-radius: 20px;
+  position:absolute;
+  top: 2%;
+  right: 5%;
+  opacity: 1;
+}
+.close-course:hover{
+  color: #fff;
+}
+.modal-dialog-calendar{
+  width: 400px;
+} 
+/*  End event card , calendar card stylization */
+
+
+
+/* EMPLOYMENT PAGE STYLIZATION */
+/* Employment cards employment*/
+hr.line{
+  border: 2px solid #5693f5; 
+  width: 50%; 
+  opacity: 0.5;
+}
+.work-card{
+  box-shadow: 2px 2px 8px #ccf2ff;
+  display:block;
+  display:none;
+  height: 130px;
+}
+a#work-button{
+  display:block;
+  margin:10px auto;
+  text-align: center; 
+  line-height: 30px;
+  width: 30%;
+}
+    /* Button stylization to display more employment cards */
+a#seeMore{
+  display:block;
+  color:#fff;
+  width:40%;
+  border-radius:30px;
+  text-decoration:none;
+  border:3px  #7aa385 solid;
+  background: #7aa385;
+  opacity:1;
+  text-align: center;
+  line-height: 45px;
+}
+a#seeMore:hover{
+  opacity:0.7;
+}
+/* End employment cards Stylization*/
+/* Employed cards Stylization*/
+#employed-card img{
+  object-fit: cover;
+}
+p.employed-text{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5;
+}
+#employed-card #collapseExample.collapse:not(.show) {
+display: block;
+height:  120px;
+overflow: hidden;
+}
+#employed-card #collapseExample.collapsing {
+height: auto;
+}
+#employed-card a.collapsed::after {
+content: 'Shfaq me shume';
+}
+#employed-card a:not(.collapsed)::after {
+content: 'Shfaq me pak';
+}
+hr.line-between-employed-cards{
+  border: 1px solid #7f8ca1; 
+  width: 50%; 
+  opacity: 0.5;
+}
+/* Button stylization to display more content on employment cards */
+a.seeMoreLess{
+  color: #1c4f52;
+  border : 2px solid lightblue;
+  padding: 4px;
+  border-radius: 10%;
+  text-decoration: none;
+}
+a.seeMoreLess:hover{
+  background-color: lightblue;
+}
+.header-text{
+  color: #39b3af;
+}
+/* End Employed cards Stylization*/
+/* End Employment page stylization */
+
+
+/* EVENT AND ARTICLE PAGE STYLIZATION */
+/* Article */                       
+#article, #event{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.imgae{
+  width: 85px;
+  height: 85px;
+  float: left;
+}
+.art-title, .list-ae, .event-title{
+  color: #17acc6;
+}
+.event-title{
+  font-size: 35px;
+}
+.subeve{
+  font-size: 28px;
+  color: #17acc1;
+}
+.art-title{
+  font-size: 35px;
+}
+.sub{
+  font-size: 28px;
+  color: #17acc1;
+}
+/* List of article and events */
+.list{
+  width:100%;
+  border: 1px solid #5693f5;
+  box-shadow: 1px 1px 1px #5693f5;
+}
+.title-link, .title-link-ev{
+  display: block;
+  font-size: 19px;
+  color: #5693f5;
+}
+.title-link:visited, .title-link-ev:visited{
+  color: #17acc1;
+}
+.title-link{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+/* Comment */
+#commentbtn{
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #17acc6;
+  border-color: #17acc1;
+  font-weight: bold;
+  font-size: 18px;
+}
+#commentbtn:hover{
+  color:#17acc6;
+  background-color: #fff;
+}
+.artevent-img{
+  max-width: 400px;
+  height: 50vh; 
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  position: relative;
+  left: 25%;
+}
+/* Event list */
+.event-card{
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px #17adc1b9;
+}
+.event-card div img{
+  border-radius: 50px 20px;
+}
+.name-event{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #17adc1;
+  font-weight: bold;
+}
+p.info-event{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.eventbody .btn-primary{
+ background-color: #fff;
+ border-color: #fff;
+  position:absolute;
+  bottom: 3%;
+  left: 80%;
+}
+.eventbody .btn-primary:hover{
+  background-color: #fff;
+  border-color: #fff;
+}
+.eventbody .fa-arrow-right{
+  color:#17acc1;
+ transform: scale(2,1); 
+}
+/*Media*/
+/*mobile*/
+@media screen and (max-width: 320px){
+  /* Toggler button */
+  .navbar-toggler{
+    width: 20%;
+  }
+  .navbar-brand {
+    width : 80%;
+    margin:0;
+  }
+  /* Subscribe modal styling */
+  .modal-subscribe-format {	
+    height: 360px;
+    width: 275px;
+    font-size: 12px;
+  }
+  .modal-subscribe-format .modal-content{
+    position: relative;
+    left: 5%;
+    top: 35px;
+    padding: 15px 20px;
+  }
+  .modal-subscribe-format .close{
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+  .modal-subscribe-format .icon-box i {
+    font-size: 50px;
+  }
+  .modal-body{
+    padding-top: 0;
+  }
+  /* End Modal Styling */
+  /* Front Text Styling */
+  .image-container{
+    height: 250px; 
+  }
+  .image-container>div.text-center{
+    margin-top: -46%
+  }
+  .image-container>div.text-center>p.title{
+    font-size: 16px;
+  }
+  .image-container>div.text-center>a.btn{
+    width: 39%;
+    font-size: 13px;
+    padding: 2px 0; 
+  }
+  /* End front text styling */
+  /* 3 homepage card articles styling */
+  #card{
+    height: 200px;
+    margin: 20px 0;
+  }
+  .card-image,.card-front-text {
+    width: 200px;
+    height: 200px;
+  }
+  .card-front-text>p{
+    font-size: 17px;
+    margin-top: 20% ;
+  }
+  .card-back{
+    font-size: 12px;
+    width: 160px;
+  }
+  .card-back>button.btn.btn-primary{
+    font-size: 12px;
+  }
+  /*motivation*/
+  #motivinner, .motivation-carousel-item{
+    height: 200px;
+  }
+  .centeredcaur {
+    font-size: 29px;
+    top: 37%;
+  }
+  .centerescaur2{
+    font-size: 18px;
+    top: 62%;
+  }
+  /* Event, calendar, employment */
+  .col-events{
+    padding: 0;
+  }
+  #calcont, .calendar,#emplocard, .card-img-top{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+  }
+  .course div,.coursename button, .coursename button:hover {
+    height: 100px;
+  }
+  .modal-dialog-calendar{
+    width: 264px;
+    position: absolute;
+    left: 6%;
+   }
+  #eventinner img{
+    height: 300px;
+  }
+  #emplobtn{
+    left: 30%;
+  }
+  .headerece{
+    font-size: 22px;
+  }
+  #eventbtn, #emplobtn, #btnevents{
+    font-size: 13px;
+  }
+  #eventbtn{
+    left: 1%;
+  }
+  #btnevents{
+    left: 61%
+  }
+  #commentbtn{
+    font-size: 13px;
+  }
+  /*footer*/ 
+  #footer{
+    font-size: 15px;
+  }
+  #logofooter {
+    margin-bottom: 18px;
+    width: 150px;
+    height: 50px;
+  }
+  /* Stylization in employment page */
+  h3.header-text{
+    font-size: 24px;
+  }
+  div.work-card{
+    font-size: 13px;
+    height: 150px;
+  }
+  a#work-button{
+    width: 53%;
+    line-height: 22px;
+  }
+  a#seeMore{
+    line-height: 34px;
+    font-size: 15px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size:13px;
+  }
+  #employed-card{
+    margin-left: 0;
+  }
+  #employed-card img{
+    height: 270px;
+  }
+  /* Event and article page stylization */
+  /* image */
+  .artevent-img{
+    width: 265px;
+    height: 265px;
+    left: 3%;
+  }
+    .imgae{
+    width: 77px;
+    height: 77px;
+    position: relative;
+    bottom: 18%;
+  }
+    /* font-size */
+    /* event & article*/
+  .event-title{
+    font-size: 24px;
+  }
+  .subeve{
+    font-size: 20px;
+  }
+  .event-date{
+    font-size: 14px;
+  }
+  .art-title{
+    font-size: 24px;
+  }
+  .sub{
+    font-size: 20px;
+  }
+  .art-author{
+    font-size: 14px;
+  }
+  #article, #event{
+    font-size: 16px;
+  }
+  #event{
+    font-size: 15px
+  }
+  .list-ae{
+    font-size: 24px;
+  }
+  .title-link{
+    font-size: 14px;
+  }
+   /* list of article and events */
+  .cardae{
+    height: 100px;
+  }
+  /* Event & Article list */
+  h1.text-center{
+    font-size:25px;
+  }
+  .event-card{
+    width: 280px;
+    margin-bottom: 24px;
+    margin-left: 5px;
+  }
+  p.info-event{
+    font-size :13px;
+  }
+  .event-card img{
+    width: 220px;
+    height: 225px;
+    margin-left: 22px;
+    object-fit: cover;
+  }
+  }
+@media screen and (min-width: 321px) and (max-width: 375px){
+  /* Toggler button */
+  .navbar-toggler{
+    width: 20%;
+  }
+  .navbar-brand {
+    width : 80%;
+    margin:0;
+  }
+  /* Subscribe modal styling */
+  .modal-subscribe-format .modal-content{
+    position: relative;
+    left: 5%;
+    top: 40px;
+    padding: 15px 20px;
+  }
+  .modal-subscribe-format {	
+    width: 320px;
+    height: 360px;
+    font-size: 14px;
+  }
+  .modal-body{
+    padding-top: 0;
+  }
+  .modal-subscribe-format .close{
+    position: absolute;
+    top: 7px;
+    right: 4px;
+  }
+  .modal-subscribe-format .icon-box i {
+    font-size: 50px;
+  }
+  .modal-subscribe-format  h4 {
+    font-size: 25px;
+    margin: 0 0 20px;	
+  }
+  .modal-subscribe-format .btn, .modal-subscribe-format .btn:active{
+    min-width: 170px;
+  }
+  .modal-subscribe-format .form-group {
+    margin-top: 25px;
+  }
+  .modal-subscribe-format.form-control, .modal-subscribe-format .btn {
+    min-height: 40px;
+  }
+  /* End Modal Styling */
+  /* Front Text Styling */
+  .image-container{
+    height: 273px;
+  }
+  .image-container>div.text-center{
+    margin-top: -44%
+  }
+  .image-container>div.text-center>p.title{
+    font-size: 20px;
+  }
+  .image-container>div.text-center>a.btn{
+    width: 34%;
+    font-size: 13px;
+    padding: 2px 0;
+  }
+   /* End front text styling */
+  /* 3 homepage card articles styling */
+  #card{
+    height: 250px;
+    margin: 20px 0;
+  }
+  .card-image,.card-front-text{
+    width: 250px;
+    height: 250px;
+  }
+  .card-front-text>p{
+    font-size: 20px;
+    margin-top: 28% ;
+  }
+  .card-back{
+    font-size: 13px;
+    width: 200px;
+  }
+  .card-back>button.btn.btn-primary{
+    font-size: 13px;
+  }
+  /* motivation carousel */
+  #motivinner, .motivation-carousel-item{
+    height: 230px;
+  }
+  /* Homepage stylization*/
+  .modal-dialog-calendar{
+    width: 286px;
+    position: absolute;
+    left: 10%;
+  }
+  .centeredcaur {
+    font-size: 28px;
+    top: 35%;
+  }
+  .centerescaur2{
+    font-size: 18px;
+    top: 62%;
+  }
+  .col-events{
+    padding: 0;
+  }
+  .headerece{
+    font-size: 25px;
+  }
+  #emplobtn {
+    left: 28%;
+  }
+  #eventbtn, #emplobtn, #btnevents{
+  font-size: 14px;
+  }
+  #eventbtn{
+  left: 1%;
+  }
+  #btnevents{
+  left: 66%
+  }
+  #commentbtn{
+  font-size: 13px;
+  }
+  /*footer*/ 
+  #footer{
+    font-size: 15px;
+  }
+  #logofooter {
+    margin-bottom: 18px;
+    width: 150px;
+    height: 50px;
+  }
+  /* Stylization in work page */
+  h3.header-text{
+    font-size: 26px;
+  }
+  div.work-card{
+    font-size:15px;
+    height: 160px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size:15px;
+  }
+  a#work-button{
+    width: 50%;
+    line-height: 22px;
+  }
+  a#seeMore{
+    line-height: 34px;
+    font-size: 15px;
+  }
+  #employed-card{
+    margin-left: 0;
+  }
+  #employed-card img{
+    height: 290px;
+  }
+  /* Event and article page stylization */
+  /* image */
+  .artevent-img{
+    width: 270px;
+    height: 270px;
+    left: 9%;
+    }
+  .imgae{
+    width: 77px;
+    height: 77px;
+    position: relative;
+    bottom: 18%;
+  }
+    /* font-size */
+    .event-title{
+      font-size: 24px;
+    }
+    .subeve{
+      font-size: 18px;
+    }
+    .event-date{
+      font-size: 14px;
+    }
+    .art-title{
+      font-size: 24px;
+    }
+    .sub{
+      font-size: 18px;
+    }
+    .art-author{
+      font-size: 14px;
+    }
+    #article, #event{
+    font-size: 16px;
+    }
+    .title-link{
+    font-size: 15px;
+    }
+    /* list of article and events */
+    .cardae{
+    height: 100px;
+    }
+    /* Event & Article list */
+    h1.text-center{
+      font-size:30px;
+    }
+    .event-card{
+      width: 300px;
+      margin-bottom: 24px;
+      margin-left: 25px;
+    }
+    p.info-event{
+      font-size :14px;
+    }
+    .event-card img{
+      width: 250px;
+      height: 250px;
+      margin-left: 15px;
+      object-fit: cover;
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 425px){
+  /* Toggler button */
+  .navbar-toggler{
+    width: 15%;
+  }
+  .navbar-brand {
+    width : 85%;
+    margin:0;
+  }
+  /* Subscribe modal styling */
+  .modal-subscribe-format .modal-content{
+    position: relative;
+    left: 12%;
+    top: 50px;
+    padding: 15px 20px;
+    }
+  .modal-subscribe-format {	
+    width: 330px;
+    height: 370px;
+    font-size: 15px;
+  }
+  .modal-body{
+    padding-top: 0;
+  }
+  .modal-subscribe-format .close{
+    position: absolute;
+    top: 7px;
+    right: 4px;
+  }
+  .modal-subscribe-format .icon-box i {
+    font-size: 60px;
+  }
+  .modal-subscribe-format  h4 {
+    font-size: 27px;
+    margin: 0 0 20px;	
+  }
+  .modal-subscribe-format .btn, .modal-subscribe-format .btn:active{
+    min-width: 180px;
+  }
+  .modal-subscribe-format .form-group {
+    margin-top: 27px;
+  }
+  .modal-subscribe-format.form-control, .modal-subscribe-format .btn {
+    min-height: 42px;
+  }
+  /* End Modal Styling */
+  /* Front Text Styling */
+  .image-container{
+    height: 230px;
+  }
+  .image-container>div.text-center{
+    margin-top: -33%
+  }
+  .image-container>div.text-center>p.title{
+    font-size: 21px;
+  }
+  .image-container>div.text-center>a.btn{
+    width: 38%;
+    font-size: 15px;
+    padding: 3px 0;
+  }
+  /* End front text styling */
+  /* 3 homepage card articles styling */
+  #card{
+    height: 300px;
+    margin: 20px 0;
+  }
+  .card-image,.card-front-text {
+    width: 300px;
+    height: 300px;
+  }
+  .card-front-text>p{
+    font-size: 24px;
+    margin-top: 28% ;
+  }
+  .card-back{
+    font-size: 14px;
+    width: 250px;
+  }
+  .card-back>button.btn.btn-primary{
+    font-size: 15px;
+  }
+  /* motivation carousel */
+  #motivinner, .motivation-carousel-item{
+    height: 250px;
+  }
+  /* Homepage stylization */
+  .modal-dialog-calendar{
+    width: 300px;
+    position: absolute;
+    left: 12%;
+    }
+  .centeredcaur {
+    font-size: 30px;
+    top: 47%;
+  }
+  .centerescaur2{
+    font-size: 19px;
+    top: 64%;
+  }
+  .col-events{
+    padding: 0 25px;
+  }
+  .headerece{
+    font-size: 25px;
+  }
+  #emplobtn {
+    left: 31%;
+  }
+    #eventbtn, #emplobtn, #btnevents{
+  font-size: 14px;
+  }
+  #eventbtn{
+  left: 1%;
+  }
+  #btnevents{
+  left: 66%
+  }
+  #commentbtn{
+    font-size: 13px;
+  }
+   /*footer*/
+  #footer{
+    font-size: 16px;
+  }
+  #logofooter {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+  }
+  /* Stylization in work page */
+  h3.header-text{
+    font-size: 26px;
+  }
+  div.work-card{
+    font-size:16px;
+    height: 160px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size:14px;
+  }
+  a#work-button{
+    width: 50%;
+    line-height: 22px;
+  }
+  a#seeMore{
+    line-height: 34px;
+    font-size: 15px;
+  }
+  #employed-card{
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #employed-card img{
+    height: 300px;
+  }
+  /* Event and article page stylization */
+  /* image */
+  .artevent-img{
+    width: 280px;
+    height: 280px;
+    left: 14%;
+  }
+  .imgae{
+    width: 77px;
+    height: 77px;
+    position: relative;
+    bottom: 10%;
+  }
+    /* font-size */
+  .event-title{
+    font-size: 28px;
+  }
+  .subeve{
+    font-size: 20px;
+  }
+  .event-date{
+    font-size: 16px;
+  }
+  .art-title{
+    font-size: 28px;
+  }
+  .sub{
+    font-size: 20px;
+  }
+  .art-author{
+    font-size: 16px;
+  }
+  #article, #event{
+    font-size: 16px;
+  }
+  .title-link{
+    font-size: 15px;
+  }
+    /* list of article and events */
+  .cardae{
+    height: 110px;
+  }
+  /* Event & Article list */
+  h1.text-center{
+    font-size:35px;
+  }
+  .event-card{
+    width: 300px;
+    margin-bottom: 24px;
+    margin-left: 50px;
+  }
+  p.info-event{
+    font-size :14px;
+  }
+  .event-card img{
+    width: 278px;
+    height: 270px;
+    object-fit: cover;
+  }
+}
+  /*tablet*/
+@media screen and (min-width: 426px) and (max-width: 768px){
+  /* Toggler button */
+  .navbar-toggler{
+    width: 10%;
+  }
+  .navbar-brand {
+    width : 90%;
+    margin:0;
+  }
+ /* Subscribe modal styling */
+  .modal-subscribe-format .modal-content{
+    position: relative;
+    top: 50px;
+    padding: 15px 20px;
+  }
+  .modal-subscribe-format {	
+    width: 350px;
+    height: 370px;
+    font-size: 15px;
+  }
+  .modal-body{
+    padding-top: 0;
+  }
+  .modal-subscribe-format .close{
+    position: absolute;
+    top: 7px;
+    right: 4px;
+  }
+  .modal-subscribe-format .icon-box i {
+    font-size: 60px;
+  }
+  .modal-subscribe-format  h4 {
+    font-size: 27px;
+    margin: 0 0 20px;	
+  }
+  .modal-subscribe-format .btn, .modal-subscribe-format .btn:active{
+    min-width: 180px;
+  }
+  .modal-subscribe-format .form-group {
+    margin-top: 27px;
+  }
+  .modal-subscribe-format.form-control, .modal-subscribe-format .btn {
+    min-height: 42px;
+  }
+  /* End Modal Styling */
+  /* Front Text Styling */
+  .image-container{
+     height: 417px;
+  }
+  .image-container>div.text-center{
+    margin-top: -32%
+  }
+  .image-container>div.text-center>p.title{
+    font-size: 33px;
+  }
+  .image-container>div.text-center>a.btn{
+    width: 25%;
+    font-size: 18px;
+    padding: 3px 0;
+  }
+   /* End front text styling */
+  /* 3 homepage card articles styling */
+  #card{
+    height: 350px;
+    margin: 20px 0;
+  }
+  .card-image,.card-front-text {
+    width: 350px;
+    height: 350px;
+  }
+  .card-front-text>p{
+    font-size: 28px;
+    margin-top: 24% ;
+  }
+  .card-back{
+    font-size: 16px;
+    width: 320px;
+  }
+  .card-back>button.btn.btn-primary{
+    font-size: 17px;
+  }
+  /* motivation carousel */
+  #motivinner,  .motivation-carousel-item{
+    height: 320px;
+  }
+  /* Homepage stylization */
+  .centeredcaur {
+    font-size: 32px;
+    top: 45%;
+  }
+  .centerescaur2{
+    font-size: 30px;
+    top: 67%;
+  }
+  .fa-chevron-down {
+    left: 50%;
+  }
+  .col-events{
+    padding: 0 10px;
+  }
+  .headerece{
+    font-size: 25px;
+  }
+    #eventbtn, #emplobtn, #btnevents{
+  font-size: 16px;
+  }
+  #eventbtn{
+  left: 1%;
+  }
+  #btnevents{
+  left: 68%
+  }
+  #commentbtn{
+    font-size: 16px;
+    }
+  /*footer*/
+  #footer{
+    font-size: 15px;
+  }
+  #footer p, #footer a{
+    margin-bottom: 10px;
+  }
+  #logofooter {
+    margin-bottom: 15px;
+    width: 150px;
+    height: 50px;
+  }
+  /* Stylization in work page */
+  h3.header-text{
+    font-size: 29px;
+  }
+  div.work-card{
+    font-size:17px;
+    height: 170px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size: 16px;
+  }
+  a#work-button{
+    line-height: 22px;
+  }
+  a#seeMore{
+    line-height: 34px;
+    font-size: 15px;
+  }
+  #employed-card{
+    margin-left: 0;
+  }
+  #employed-card img{
+    height: 350px;
+  }
+  /* Event and article page stylization */
+  /* image */
+  .artevent-img{
+    width: 280px;
+    height: 280px;
+    left: 16%;
+    }
+    .imgae{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 5%;
+    }
+    /* font-size */
+    .event-title{
+      font-size: 28px;
+    }
+    .subeve{
+      font-size: 20px;
+    }
+    .event-date{
+      font-size: 16px;
+    }
+    .art-title{
+      font-size: 28px;
+    }
+    .sub{
+      font-size: 20px;
+    }
+    .art-author{
+      font-size: 16px;
+    }
+    #article, #event{
+    font-size: 17px;
+    }
+    .title-link{
+    font-size: 15px;
+    }
+    /* list of article and events */
+    .cardae{
+    height: 110px;
+    }
+    h1.text-center{
+      font-size:40px;
+    }
+    .event-card{
+      width: 320px;
+      margin-bottom: 24px;
+    }
+    p.info-event{
+      font-size :14px;
+    }
+    #eventlist .row, #footer{
+      padding-left: 0;
+    }
+    .event-card img{
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
+      margin-left:15px ;
+    }
+}
+  /*laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  /* Front Text Styling */
+  .image-container{
+    height: 470px;
+  }
+  .image-container>div.text-center{
+    margin-top: -28%
+    /* bottom: 27%; */
+  }
+  .image-container>div.text-center>p.title{
+    font-size: 46px;
+  }
+  .image-container>div.text-center>a.button{
+    width: 25%;
+    font-size: 19px;
+    padding: 3px 0;
+  }
+  /* End front text styling */
+  /* 3 homepage card articles styling */
+  #card{
+    height: 250px;
+    margin: 20px 0;
+  }
+  .card-image ,.card-front-text {
+    width: 250px;
+    height: 250px;
+  }
+  .card-front-text>p{
+    font-size: 18px;
+    margin-top: 24% ;
+    margin-left:15px;
+    margin-right: 25px ;
+  }
+  .card-back{
+    font-size: 15px;
+    width: 220px;
+  }
+  .card-back>button.btn.btn-primary{
+    font-size: 16px;
+  }
+   /* motivation carousel */
+   #motivinner, .motivation-carousel-item{
+    height: 400px;
+  }
+  /* homepage stylization */
+  .centeredcaur {
+    font-size: 45px;
+    top: 45%;
+  }
+  .centerescaur2{
+    font-size: 32px;
+    top: 60%;
+  }
+  .fa-chevron-down {
+    left: 50%;
+  }
+  .col-events{
+    padding: 0 10px;
+  }
+  .headerece{
+    font-size: 25px;
+  }
+  #eventbtn, #emplobtn, #btnevents{
+  font-size: 17px;
+  }
+  #eventbtn{
+  left: 1%;
+  }
+  #btnevents{
+  left: 65%
+  }
+  #emplobtn {
+    left: 28%;
+  }
+  /*footer*/
+  #footer{
+    font-size: 16px;
+  }
+  #logofooter {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 60px;
+  }
+  /* Stylization in work page */
+  h3.header-text{
+    font-size: 26px;
+  }
+  div.work-card{
+    font-size:17px;
+    height: 160px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size:15px;
+  }
+  a#work-button{
+    width: 50%;
+    line-height: 22px;
+  }
+  a#seeMore{
+    line-height: 34px;
+    font-size: 15px;
+  }
+  #employed-card{
+    margin-left: 0;
+  }
+  #employed-card img{
+    height: 260px;
+  }
+  #employed-card #collapseExample.collapse:not(.show) {
+    height:  200px;
+  }
+  #employed-card #collapseExample1.collapse:not(.show) {
+    height:  200px;
+  }
+  #employed-card #collapseExample2.collapse:not(.show) {
+    height:  200px;
+  }
+  h1.text-center{
+    font-size:40px;
+  }
+  .event-card img{
+    width: 255px;
+    height: 260px;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+  /* Front Text Styling */
+  .image-container{
+    height: 582px;
+  }
+  .image-container>div.text-center>p.title{
+    font-size: 60px;
+  }
+  .image-container>div.text-center>button{
+    width: 20%;
+    font-size: 20px;
+    padding: 3px 0;
+  }
+  /* End front text styling */
+  /* 3 homepage card articles styling */
+  #card{
+    height: 300px;
+    margin: 20px 0;
+  }
+  .card-image, .card-front-text {
+    width: 280px;
+    height: 300px;
+  }
+  .card-front-text>p{
+    font-size: 25px;
+    margin-top: 25% ;
+  }
+  .card-back{
+    font-size: 17px;
+    width: 250px;
+  }
+  .card-back>button.btn.btn-primary{
+    font-size: 17px;
+  }
+  /* motivation carousel */
+  #motivinner, .motivation-carousel-item{
+    height: 450px;
+  }
+  /* Homepage stylization */
+  .centeredcaur {
+    font-size: 32px;
+    top: 45%;
+  }
+  .headerece{
+    font-size: 25px;
+  }
+  .fa-chevron-down {
+    left: 50%;
+  }
+  .col-events{
+    padding: 0 45px;
+  }
+  #eventinner img{
+    height: 350px;
+  }
+  #calcont, .calendar,#emplocard, .card-img-top{
+    width: 100%;
+    height: 350px;
+    padding: 0%;
+  }
+  .course div,.coursename button, .coursename button:hover {
+    height: 116.66666px;
+  }
+  #emplobtn{
+    left:33%;
+  }
+  /* footer */
+  #footer{
+    font-size: 17px;
+  }
+  #logofooter {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 60px;
+  }
+  /* Stylization in work page */
+    h3.header-text{
+    font-size: 30px;
+  }
+  div.work-card{
+    font-size: 19px;
+    height: 140px;
+  }
+  a#work-button{
+    width: 50%;
+    line-height: 22px;
+  }
+  a#seeMore{
+    line-height: 34px;
+    font-size: 15px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size:16px;
+  }
+  #employed-card{
+    margin-left: 0;
+  }
+  #employed-card img{
+    height: 370px;
+  }
+  #employed-card #collapseExample.collapse:not(.show) {
+    height:  200px;
+  }
+  #employed-card #collapseExample1.collapse:not(.show) {
+    height:  200px;
+  }
+  #employed-card #collapseExample2.collapse:not(.show) {
+    height:  200px;
+  }
+  p.employed-text, a.seeMoreLess{
+    font-size:16px;
+  }
+  /* Event & article list */
+  h1.text-center{
+    font-size:45px;
+  }
+  .event-card img{
+    width: 310px;
+    height: 300px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+}
